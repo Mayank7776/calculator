@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <style>
+         body{
+            margin: 0;
+         }
+       .container{
+        height:auto;
+        width: 700px;
+        background-color: rgb(0, 0, 0);
+        display: grid;
+        font-size: 30px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        column-gap: 20px;
+        row-gap: 10px;
+        padding: 10px;
+        margin: auto;
+       }
+       .item{
+        background-color: rgb(236, 236, 236);
+        height: 100px;
+        width: 70%;
+        color: rgb(0, 0, 0);
+        font-size: 40px;
+        border-radius: 100%;
+       }
+       .item1{
+        text-align: center;
+        grid-column-start: 1;
+        grid-column-end: 5;
+        background-color: transparent;
+       }
+       .item2{
+        background-color: orangered;
+       }
+       button{
+        border: none;
+        cursor: pointer;
+       }
+       input[type="text"]{
+        margin-left: 50px;
+        padding: 10px 20px;
+        width: 110%;
+        height: 60px;
+        border: none;
+        border-radius: 10px;
+
+       }
+       .main{
+        text-align: center;
+       }
+       .heading{
+        background-image: linear-gradient(blue,red);
+        text-transform: uppercase;
+        font-size: 90px;
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+       }
+       .item:hover{
+        background-color: bisque;
+       }
+    </style>
+</head>
+<body>
+    <div class="main"> <h1 class="heading"> calculator </h1></div>
+    <div class="container">
+        <div class="item item1"><input type="text" name="" id=""></div>
+        <button class="item">C</button>
+        <button class="item">%</button>
+        <button class="item">=</button>
+        <button class="item">/</button>
+        <button class="item">9</button>
+        <button class="item">8</button>
+        <button class="item">7</button>
+        <button class="item">*</button>
+        <button class="item">6</button>
+        <button class="item">5</button>
+        <button class="item">4</button>
+        <button class="item">-</button>
+        <button class="item">3</button>
+        <button class="item">2</button>
+        <button class="item">1</button>
+        <button class="item">+</button>
+        <button class="item">00</button>
+        <button class="item">0</button>
+        <button class="item ">.</button>
+        <button class="item item2">=</button>
+    </div>
+</body>
+</html>
